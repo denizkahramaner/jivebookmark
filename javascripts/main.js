@@ -14,6 +14,9 @@ gadgets.util.registerOnLoadHandler(function() {
 //        console.log('success', data);
         var el = $('<div></div>');
         el.html(data);
-        console.log($("tbody .j-browse-details-body"));
+        $("tbody .j-browse-details-body").find("td .j-td-title").forEach(function(row) {
+            console.log(row);
+        });
+
     });
 });
