@@ -5,6 +5,7 @@ gadgets.util.registerOnLoadHandler(function() {
         var el = $('<div></div>');
         el.html(data);
         var res = $("tbody .j-browse-details-body", el);
-        console.log(res);
+        console.log('foudn', res);
+        debugger;
     });
 });
