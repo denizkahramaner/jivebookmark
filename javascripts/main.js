@@ -11,6 +11,9 @@ gadgets.util.registerOnLoadHandler(function() {
 //        console.log("response",response);
 //    });
     $.get('/bookmarks?itemView=detail', function(data) {
-        console.log('success', data);
+//        console.log('success', data);
+        var el = $('<div></div>');
+        el.html(data);
+        console.log($("tbody .j-browse-details-body"));
     });
 });
