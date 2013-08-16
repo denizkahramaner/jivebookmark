@@ -4,7 +4,7 @@ gadgets.util.registerOnLoadHandler(function() {
 //        console.log('success', data);
         var el = $('<div></div>');
         el.html(data);
-        var res = $("tbody .j-browse-details-body", el).find("td .j-td-title");
+        var res = $("tbody .j-browse-details-body", el);
         console.log(res);
     });
 });
